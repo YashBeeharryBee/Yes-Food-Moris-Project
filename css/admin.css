@@ -1,0 +1,138 @@
+/* Admin Panel Styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    .tbl-full{
+        width: 100%;
+    }
+    .tbl-30{
+        width: 30%;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* css for menu */
+.menu{
+    border-bottom: 1px solid #000;
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline;
+            padding: 1%;
+        }
+    }
+    ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6b81;
+    &:hover{
+            color: #ff4757;
+        }
+    }
+}
+
+/* css for main-content */
+.main-content{
+    background-color: #f1f2f6;
+    padding: 3% 0;
+    .col-4{
+        width: 18%;
+        background-color: #fff;
+        margin: 1%;
+        padding: 2%;
+        float: left;
+    }
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+table {
+    tr th{
+        border-bottom: 1px solid #000;
+        padding: 1%;
+        text-align: left;
+    }
+    tr td{
+        padding: 1%;
+    }
+}
+
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    &:hover{
+        background-color: #11263a;
+        transition: 0.5s;
+    }
+}
+
+.btn-secondary{
+    background-color: #055006;
+    padding: 1%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    &:hover{
+        background-color: #11263a;
+        transition: 0.5s;
+    }
+}
+
+.btn-danger{
+    background-color: #b4000f;
+    padding: 1%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    &:hover{
+        background-color: #330404;
+        transition: 0.5s;
+    }
+}
+
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}
+
+/* Login Start */
+
+.login{
+    width: 20%;
+    border: 1px solid gray;
+    margin: 10% auto;
+    padding: 2%;
+}
+
+/* css for footer */
+.footer{
+    background-color: #9e1219;
+    color: #fff;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
