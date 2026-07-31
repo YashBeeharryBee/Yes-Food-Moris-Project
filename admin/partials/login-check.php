@@ -2,7 +2,7 @@
 
     // AUTHORIZATION - ACCESS CONTROL
     // CHECK WHETHER THE USER IS LOGIN OR NOT
-    if(!isset($_SESSION['user'])) // IF USER SESSION IS NOT SET 
+    if(!isset($_SESSION['user'])) // IF USER SESSION IS NOT SET
     {
         // USER IS NOT LOG IN
         // REDIRECT TO LOGIN PAGE
