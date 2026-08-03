@@ -98,29 +98,33 @@
                     {
                         // GET THE DETAILS OF THE SELECTED IMAGE
                         $image_name = $_FILES['image']['name'];
-                        // AUTO RENAME OUR IMAGE
-                        // GET THE EXTENSION OF OUR IMAGE (jpg, png, gif, etc.) "
-                        $ext = end(explode('.', $image_name));
-                        // RENAME THE IMAGE
-                        $image_name = "Food_Category_".rand(000, 999).'.'.$ext; // e.g. Food_Category_834.jpg
-                        
-                        
-                        
-                        $source_path = $_FILES['image']['tmp_name'];
-                        $destination_path = "../images/category/".$image_name;
-                        
-                        // FINALLY UPLOAD THE IMAGE
-                        $upload = move_uploaded_file($source_path, $destination_path);
 
-                        // CHECK WHETHER THE IMAGE IS UPLOADED OR NOT
-                        if($upload==FALSE)
+                        // UPLOAD THE IMAGE ONLY IF THE IMAGE IS SELECTED
+                        if($image_name!="")
                         {
-                            // SET MESSAGE
-                            $_SESSION['upload'] = "<div class='error'>Image Failed to upload.</div>";
-                            // REDIRECT TO ADD CATEGORY PAGE
-                            header("location:".SITEURL.'admin/add-category.php');
-                            // STOP THE PROCESS
-                            die();
+                            // AUTO RENAME OUR IMAGE
+                            // GET THE EXTENSION OF OUR IMAGE (jpg, png, gif, etc.) "
+                            $ext = end(explode('.', $image_name));
+                            // RENAME THE IMAGE
+                            $image_name = "Food_Category_".rand(000, 999).'.'.$ext; // e.g. Food_Category_834.jpg
+                            
+                            
+                            $source_path = $_FILES['image']['tmp_name'];
+                            $destination_path = "../images/category/".$image_name;
+                            
+                            // FINALLY UPLOAD THE IMAGE
+                            $upload = move_uploaded_file($source_path, $destination_path);
+
+                            // CHECK WHETHER THE IMAGE IS UPLOADED OR NOT
+                            if($upload==FALSE)
+                            {
+                                // SET MESSAGE
+                                $_SESSION['upload'] = "<div class='error'>Image Failed to upload.</div>";
+                                // REDIRECT TO ADD CATEGORY PAGE
+                                header("location:".SITEURL.'admin/add-category.php');
+                                // STOP THE PROCESS
+                                die();
+                            }
                         }
                     }
                     else
