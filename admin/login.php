@@ -50,8 +50,11 @@
 
     if(isset($_POST['submit'])){
         // GET THE DATE FORM LOGIN FORM
-        $username = $_POST['username'];
-        $password = md5($_POST['password']);
+        // $username = $_POST['username'];
+        $username = mysqli_real_escape_string($conn, $_POST['username']);
+        // $password = md5($_POST['password']);
+        $password = mysqli_real_escape_string($conn, md5($_POST['password']));
+
 
         // SQL TO CHECK WHETHER THE USER WITH USERNAME AND PASSWORD EXITS OR NOT
         $sql = "SELECT * FROM tbl_admin WHERE username = '$username' AND password='$password'";
