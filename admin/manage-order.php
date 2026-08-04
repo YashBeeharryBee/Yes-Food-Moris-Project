@@ -6,7 +6,7 @@
     <div class="wrapper">
         <h1>MANAGE - ORDER</h1>
 
-        <br /><br /><br />
+        <br /><br />
 
         <?php
             if(isset($_SESSION['update']))
@@ -15,7 +15,7 @@
                 unset ($_SESSION['update']);
             }
         ?>
-        <br><br>
+        <br /><br />
 
         <table class="tbl-full">
             <tr>

@@ -11,7 +11,7 @@
         <!-- BUTTON TO ADD FOOD -->
         <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn-primary">Add Food</a>
 
-        <br /><br /><br>
+        <br /><br />
         
         <?php
             if(isset($_SESSION['add']))
@@ -40,6 +40,8 @@
                 unset($_SESSION['update']);
             }
         ?>
+
+        <br><br>
 
         <table class="tbl-full">
             <tr>

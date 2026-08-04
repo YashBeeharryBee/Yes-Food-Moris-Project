@@ -4,12 +4,11 @@
     <div class="main-content">
         <div class="wrapper">
             <h1>MANAGE - ADMIN</h1>
-            <br /><br /><br />
-
+            <br /><br />
             <!-- BUTTON TO ADD ADMIN -->
             <a href="add-admin.php" class="btn-primary">Add Admin</a>
             
-            <br /><br /><br />
+            <br /><br />
 
             <?php
                 if(isset($_SESSION['add']))
@@ -51,7 +50,7 @@
             ?>
             
 
-            <br /><br /><br />
+            <br /><br />
 
             <table class="tbl-full">
                 <tr>

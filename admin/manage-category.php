@@ -6,54 +6,54 @@
     <div class="wrapper">
         <h1>MANAGE - CATEGORY</h1>
 
-        <br /><br /><br />
-
-        <?php
-             
-        if(isset($_SESSION['add']))
-        {
-            echo $_SESSION['add']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['add']); // REMOVING SESSION MESSAGE
-        }
-        if(isset($_SESSION['remove']))
-        {
-            echo $_SESSION['remove']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['remove']); // REMOVING SESSION MESSAGE
-        }
-        if(isset($_SESSION['delete']))
-        {
-            echo $_SESSION['delete']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['delete']); // REMOVING SESSION MESSAGE
-        }
-        if(isset($_SESSION['no-category-found']))
-        {
-            echo $_SESSION['no-category-found']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['no-category-found']); // REMOVING SESSION MESSAGE
-        }
-        if(isset($_SESSION['update']))
-        {
-            echo $_SESSION['update']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['update']); // REMOVING SESSION MESSAGE
-        }
-        if(isset($_SESSION['upload']))
-        {
-            echo $_SESSION['upload']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['upload']); // REMOVING SESSION MESSAGE
-        }
-        if(isset($_SESSION['failed-remove']))
-        {
-            echo $_SESSION['failed-remove']; // DISPLAYING SESSION MESSAGE
-            unset($_SESSION['failed-remove']); // REMOVING SESSION MESSAGE
-        }
-
-        ?>
-        <br /><br /><br />
+        <br><br>
 
             <!-- BUTTON TO ADD ADMIN -->
             <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category</a>
 
-            <br /><br /><br />
+            <br><br>
 
+            <?php
+             
+                if(isset($_SESSION['add']))
+                {
+                    echo $_SESSION['add']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['add']); // REMOVING SESSION MESSAGE
+                }
+                if(isset($_SESSION['remove']))
+                {
+                    echo $_SESSION['remove']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['remove']); // REMOVING SESSION MESSAGE
+                }
+                if(isset($_SESSION['delete']))
+                {
+                    echo $_SESSION['delete']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['delete']); // REMOVING SESSION MESSAGE
+                }
+                if(isset($_SESSION['no-category-found']))
+                {
+                    echo $_SESSION['no-category-found']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['no-category-found']); // REMOVING SESSION MESSAGE
+                }
+                if(isset($_SESSION['update']))
+                {
+                    echo $_SESSION['update']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['update']); // REMOVING SESSION MESSAGE
+                }
+                if(isset($_SESSION['upload']))
+                {
+                    echo $_SESSION['upload']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['upload']); // REMOVING SESSION MESSAGE
+                }
+                if(isset($_SESSION['failed-remove']))
+                {
+                    echo $_SESSION['failed-remove']; // DISPLAYING SESSION MESSAGE
+                    unset($_SESSION['failed-remove']); // REMOVING SESSION MESSAGE
+                }
+
+            ?>
+
+            <br /><br />
             <table class="tbl-full">
                 <tr>
                     <th>S.N</th>
