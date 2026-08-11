@@ -1,16 +1,3 @@
-/* ==========================================================================
-   Admin Dashboard — Design System (Mobile-first, fully responsive)
-   Signature: monospace numerals on data/tables + a single amber "signal"
-   accent against a cool indigo neutral palette, evoking an operator console.
-   Pair with Google Fonts: Space Grotesk (display), Inter (body),
-   JetBrains Mono (data/utility).
-
-   IMPORTANT: responsive CSS only works if your HTML <head> includes:
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   Without it, mobile browsers render at desktop width and scale down,
-   which defeats every media query below.
-   ========================================================================== */
-
 :root{
   /* Color */
   --bg:            #f4f5f9;
@@ -44,9 +31,7 @@
   --font-body:    "Inter", "Segoe UI", system-ui, sans-serif;
   --font-mono:    "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
 
-  /* Fluid type scale — clamp(min, preferred, max) so text scales
-     smoothly between phone and large-desktop instead of jumping at
-     breakpoints. Max values match your current desktop sizing. */
+
   --fs-body:  clamp(15px, 13px + 0.9vw, 20px);
   --fs-nav:   clamp(14px, 12px + 1.1vw, 20px);
   --fs-stat:  clamp(20px, 14px + 2.6vw, 30px);
@@ -150,8 +135,7 @@ svg{
   width: 100%;
 }
 
-/* Mobile-first: full width by default, restores the fixed 30% once
-   there's enough room for it to be useful next to other content. */
+
 .tbl-30{
   width: 100%;
 }
@@ -281,11 +265,6 @@ svg{
 /* ==========================================================================
    Tables
    ========================================================================== */
-
-/* Tables are the classic mobile-responsiveness failure point. Rather than
-   requiring a markup change, the table itself becomes a horizontally
-   scrollable block below the tablet breakpoint, then reverts to a normal
-   table once there's enough width to show columns comfortably. */
 
 table{
   width: 100%;
