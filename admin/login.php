@@ -32,7 +32,7 @@
             Username: </br>
             <input type="text" name="username" placeholder="Enter Username"> </br><br>
             Password: </br>
-            <input type="text" name="password" placeholder="Enter Password">
+            <input type="password" name="password" placeholder="Enter Password">
             <br><br>
             <input type="submit" name="submit" value="Login" class="btn-primary"> 
          </form>
