@@ -11,7 +11,7 @@
 <body>
     <div class="login ">
         <h1 class="text-center">Login</h1>
-        <br><br>
+        <br>
 
         <?php
             if(isset($_SESSION['login']))
@@ -25,7 +25,7 @@
                 unset ($_SESSION['no-login-message']);
             }
         ?>
-        <br><br>
+        <br>
 
         <!-- Login Form Start-->
          <form action="" method="POST" class="text-center">
